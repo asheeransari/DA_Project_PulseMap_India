@@ -1,9 +1,32 @@
 data/raw/
-*.csv
-*.xlsx
-*.env
-__pycache__/
+data/processed/
+
+# Jupyter checkpoints
 .ipynb_checkpoints/
+__pycache__/
 *.pyc
-.DS_Store
+
+# Virtual environment
+venv/
+env/
+*.env
 DA_Pr_PMI/
+
+# Logs
+logs/
+
+# Artifacts
+artifacts/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Excel/CSV raw files
+*.xlsx
+*.xls
+*.csv
+
+# IDE
+.vscode/
+.idea/
