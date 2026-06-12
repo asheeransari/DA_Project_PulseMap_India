@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ── Base ── */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+#MainMenu { visibility: hidden; }
+footer    { visibility: hidden; }
+header    { visibility: hidden; }
+
+/* ── App background ── */
+.stApp {
+    background-color: #0f1117;
+    color: #e8eaf0;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background-color: #161b27;
+    border-right: 1px solid #1e2738;
+}
+
+[data-testid="stSidebar"] * {
+    color: #c9d1e0 !important;
+}
+
+[data-testid="stSidebar"] .block-container {
+    padding-top: 0.5rem;
+}
+
+/* ── Hero banner ── */
+.hero-banner {
+    background: linear-gradient(135deg, #c0392b 0%, #922b21 50%, #1a0a09 100%);
+    border-radius: 14px;
+    padding: 2.5rem 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 50%;
+}
+.hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -1px;
+    margin: 0;
+}
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.75);
+    margin-top: 0.4rem;
+}
+
+/* ── Page title (non-home pages) ── */
+.page-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e8eaf0;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.2rem;
+}
+.page-subtitle {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+/* ── Metric cards ── */
+[data-testid="metric-container"] {
+    background: #161b27;
+    border: 1px solid #1e2738;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+}
+[data-testid="metric-container"] label {
+    color: #7b8599 !important;
+    font-size: 0.82rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    color: #e8eaf0 !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+
+/* ── Section headers ── */
+.section-header {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #e8eaf0;
+    margin: 1rem 0 0.8rem 0;
+    min-height: 32px;
+}
+
+/* ── Insight box (Udemy style) ── */
+.insight-box {
+    background: #1a2035;
+    border: 1px solid #2a3a5c;
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    padding: 0.9rem 1.2rem;
+    margin: 1rem 0;
+    font-size: 0.92rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+.insight-box strong { color: #60a5fa; }
+
+/* ── Key insight cards (home page) ── */
+.insight-card {
+    background: #161b27;
+    border: 1px solid #1e2738;
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    
+    height: 260px;
+
+    transition: border-color 0.2s;
+
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.insight-card:hover { border-color: #c0392b; }
+.insight-card-icon { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.insight-card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e74c3c;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+}
+.insight-card-text {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* ── Page nav cards (home page) ── */
+.page-card {
+    background: #161b27;
+    border: 1px solid #1e2738;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+
+    min-height: 180px;
+    height: 180px;
+
+    transition: border-color 0.2s, background 0.2s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.page-card:hover {
+    border-color: #c0392b;
+    background: #1c2030;
+}
+.page-card-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+.page-card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e74c3c;
+    margin-bottom: 0.4rem;
+}
+.page-card-desc {
+    font-size: 0.82rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* ── Risk tier badges ── */
+.badge-critical { background:#c0392b22; color:#e74c3c; border:1px solid #c0392b55; padding:3px 12px; border-radius:20px; font-size:0.82rem; font-weight:600; }
+.badge-high     { background:#e67e2222; color:#e67e22; border:1px solid #e67e2255; padding:3px 12px; border-radius:20px; font-size:0.82rem; font-weight:600; }
+.badge-moderate { background:#f1c40f22; color:#f1c40f; border:1px solid #f1c40f55; padding:3px 12px; border-radius:20px; font-size:0.82rem; font-weight:600; }
+.badge-low      { background:#27ae6022; color:#27ae60; border:1px solid #27ae6055; padding:3px 12px; border-radius:20px; font-size:0.82rem; font-weight:600; }
+
+/* ── Divider ── */
+.divider {
+    border: none;
+    border-top: 1px solid #1e2738;
+    margin: 1.5rem 0;
+}
+
+/* ── Footer ── */
+.footer-text {
+    font-size: 0.8rem;
+    color: #3d4559;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #1e2738;
+}
+.footer-text a { color: #e74c3c; text-decoration: none; }
+.footer-text a:hover { text-decoration: underline; }
+
+/* ── Warning banner ── */
+.warning-banner {
+    background: #1a0f0f;
+    border: 1px solid #c0392b44;
+    border-left: 4px solid #c0392b;
+    border-radius: 8px;
+    padding: 0.9rem 1.2rem;
+    margin: 1rem 0;
+    font-size: 0.92rem;
+    color: #94a3b8;
+}
+.warning-banner strong { color: #e74c3c; }
+
+/* ─────────────────────────────────────────────
+   CONSISTENT CARD / INSIGHT ALIGNMENT
+───────────────────────────────────────────── */
+
+/* Insight boxes */
+.insight-box {
+    box-sizing: border-box;
+}
+
+/* Home page cards same height */
+.insight-card {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-card {
+    min-height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section spacing consistency */
+.section-header {
+    min-height: 32px;
+}
+
+/* Plotly chart consistency */
+.stPlotlyChart {
+    margin-bottom: 0.5rem;
+}
+
+/* Dataframe consistency */
+[data-testid="stDataFrame"] {
+    margin-bottom: 0.5rem;
+}
