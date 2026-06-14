@@ -2,7 +2,7 @@ import streamlit as st
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 
-from app.data_loader import load_data, apply_styles, render_sidebar, COLOR_MAP, footer
+from data_loader import load_data, apply_styles, render_sidebar, COLOR_MAP, footer
 
 st.set_page_config(
     page_title="PulseMap India",
@@ -21,7 +21,7 @@ st.markdown("""
     <div class='hero-title'>🗺️ PulseMap India</div>
     <div class='hero-subtitle'>
         District-level preventable disease risk intelligence across 707 Indian districts
-        · Built with Python, Pandas, Plotly & Streamlit
+        - Built with Python, Pandas, Plotly & Streamlit
     </div>
 </div>
 """, unsafe_allow_html=True)

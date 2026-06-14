@@ -5,7 +5,7 @@ import streamlit as st
 
 @st.cache_data
 def load_data():
-    base = pathlib.Path(__file__).parent.parent
+    base = pathlib.Path(__file__).parent
     path = base / 'artifacts' / 'pulsemap_final.xlsx'
     return pd.read_excel(path)
 

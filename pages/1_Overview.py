@@ -4,7 +4,7 @@ import sys, pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 
-from app.data_loader import (
+from data_loader import (
     load_data, apply_styles, render_sidebar,
     COLOR_MAP, TIER_ORDER, plotly_layout,
     insight_box, footer

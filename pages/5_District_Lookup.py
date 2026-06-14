@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
-from app.data_loader import (load_data, apply_styles, render_sidebar,
+from data_loader import (load_data, apply_styles, render_sidebar,
                          COLOR_MAP, plotly_layout, insight_box, footer)
 
 st.set_page_config(page_title="District Lookup · PulseMap", page_icon="🔍", layout="wide")
