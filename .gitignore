@@ -1,6 +1,9 @@
 data/raw/
 data/processed/
 
+data/
+dashboard/
+
 # Jupyter checkpoints
 .ipynb_checkpoints/
 __pycache__/
@@ -14,6 +17,7 @@ DA_Pr_PMI/
 
 # Logs
 logs/
+notebooks/logs/
 
 # Artifacts
 artifacts/
@@ -21,6 +25,7 @@ artifacts/
 # OS files
 .DS_Store
 Thumbs.db
+*.db
 
 # Excel/CSV raw files
 *.xlsx
