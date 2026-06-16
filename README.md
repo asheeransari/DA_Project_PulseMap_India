@@ -55,7 +55,7 @@ This project includes a parallel Power BI dashboard built on the same risk-score
 
 Having both versions demonstrates the ability to work across code-based (Python/Streamlit) and drag-and-drop (Power BI) analytics environments — a practical skill expected in most Data Analyst roles.
 
-🔗 [View Power BI Dashboard (PDF)](https://drive.google.com/file/d/REPLACE_WITH_YOUR_LINK/view?usp=drive_link)
+🔗 [View Power BI Dashboard (PDF)](https://drive.google.com/file/d/128gnVAyjF2bXeCpyk4uxJ1SVeTMxAPA8/view?usp=sharing)
 
 ---
 
