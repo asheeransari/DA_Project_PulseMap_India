@@ -2,7 +2,7 @@
 
 An end-to-end data analytics system that scores 707 Indian districts on preventable disease risk using NFHS-5 data — built with Python, SQL, Power BI, and a fully deployed Streamlit dashboard.
 
-🔗 **Live Demo:** https://da-project-pulsemap-india-web-app.streamlit.app/ &nbsp;|&nbsp; 📊 **Power BI Dashboard:** [View PDF](https://drive.google.com/file/d/128gnVAyjF2bXeCpyk4uxJ1SVeTMxAPA8/view?usp=sharing) &nbsp;|&nbsp; 📄 **Analysis Report:** [View PDF](./reports/PulseMap_India_Analysis_Report.pdf)
+🔗 **Live Demo:** https://da-project-pulsemap-india-web-app.streamlit.app/ &nbsp;|&nbsp; 📊 **Power BI Dashboard:** [View PDF](https://drive.google.com/file/d/128gnVAyjF2bXeCpyk4uxJ1SVeTMxAPA8/view?usp=sharing) &nbsp;|&nbsp; 📄 **Analysis Report:** [View PDF](https://drive.google.com/file/d/1FDesBOgMMog7VpqJC_9rTPBPbB9WSx8D/view?usp=sharing)
 
 ---
 
@@ -63,7 +63,7 @@ Having both versions demonstrates the ability to work across code-based (Python/
 
 A complete 23-page professional analysis report is included, covering methodology, all EDA findings, SQL query results, risk score derivation, and business recommendations for health insurers, NGOs, hospital chains, and government policy bodies.
 
-📄 [View Full Analysis Report (PDF)](./reports/PulseMap_India_Analysis_Report.pdf)
+📄 [View Full Analysis Report (PDF)](https://drive.google.com/file/d/1FDesBOgMMog7VpqJC_9rTPBPbB9WSx8D/view?usp=sharing)
 
 ---
 
@@ -169,7 +169,7 @@ pulsemap-india/
 - District-level healthcare infrastructure data (hospitals, beds, doctors) was not available in clean public format; health insurance coverage was used as a proxy
 - The Risk Score is an exploratory composite index, not a clinically validated epidemiological model
 
-Full details in Section 9 of the [Analysis Report](./reports/PulseMap_India_Analysis_Report.pdf).
+Full details in Section 9 of the [Analysis Report](https://drive.google.com/file/d/1FDesBOgMMog7VpqJC_9rTPBPbB9WSx8D/view?usp=sharing).
 
 ---
 
